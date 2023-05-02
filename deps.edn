@@ -1,8 +1,6 @@
 {:paths   ["src/main" "resources"]
  :deps    {org.clojure/clojure    {:mvn/version "1.10.3"}
-           com.fulcrologic/fulcro {:mvn/version "3.4.14"}
-           mohamicorp/fulcro-atlaskit {:git/url "git@github.com:mohamicorp/fulcro-atlaskit"
-                                       :sha "ce0b3e1c79860e927ca1979c5e6260a4392b834a"}}
+           com.fulcrologic/fulcro {:mvn/version "3.4.14"}}
 
  :aliases {:dev {:extra-paths ["src/dev"]
                  :extra-deps  {org.clojure/clojurescript {:mvn/version "1.10.914"}

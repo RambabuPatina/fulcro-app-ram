@@ -35,14 +35,3 @@ Build your app now by selecting "main" under the "Builds" menu and clicking "sta
 
 We configured the shadow-cljs server to also start a development mode HTTP server to serve our HTML file and javascript.
 So, if you didn’t make any typos then your new app should display Sample get staarted page at http://localhost:8000.
-
-#### Note
-Our fulcro wrapper version can be updated in deps.edn
-
-        mohamicorp/fulcro-atlaskit {:git/url "git@github.com:mohamicorp/fulcro-atlaskit"
-                                       :sha "<HERE>"}
-
-#### To update @fuegokit/react version in fulcro-atlaskit
-Feel free to upgrade the version in the brach [NH-157-adding-Fuegokit-components](https://github.com/mohamicorp/fulcro-atlaskit/tree/feature/NH-157-adding-Fuegokit-components)
-
-You can update the version in fulcro-atlaskit/package.json and fulcro-atlaskit/src/deps.cljs

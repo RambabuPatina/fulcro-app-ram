@@ -5,6 +5,7 @@
                    :asset-path "/js/main"
                    :modules    {:main {:init-fn app.client/init
                                        :entries [app.client]}}
+                   :compiler-options {:output-feature-set :es8}
                    :devtools   {:after-load app.client/refresh
                                 :preloads   [com.fulcrologic.fulcro.inspect.preload
                                              com.fulcrologic.fulcro.inspect.dom-picker-preload]}}}}

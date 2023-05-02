@@ -2,27 +2,18 @@
   (:require
    [com.fulcrologic.fulcro.application :as app]
    [com.fulcrologic.fulcro.components :as comp :refer [defsc]]
-   [com.fulcrologic.fulcro-i18n.i18n :refer [tr]]
    [com.fulcrologic.fulcro.dom :as dom]
-   [fulcro-atlaskit.fuegokit :as fuegokit]
-   [fulcro-atlaskit.button :as button]))
+   ;;[app.victory :as victory]
+   [app.fuegokit :as fuegokit]
+   ))
 
 (defonce app (app/fulcro-app))
 
 (defsc Root [this _]
   (dom/div
-   (dom/h1 (tr " Get started"))
-   (dom/p
-    (tr
-     "The Numbered headings app has been installed successfully. Get started right away and go to the page where you want to use Numbered Headings."))
-   (dom/h2 (tr "Documentation"))
-   (dom/p (tr "In our documentation we explain exactly how you can get the most out of the app."))
-   (dom/div
-    :.button
-    (button/ui-button
-     {:href "https://apps.appf.re/nh/doc/cloud"
-      :target "_blank"}
-     (tr "Documentation")))
+   (dom/h1 " Get started")
+   (dom/p "In our documentation we explain exactly how you can get the most out of the app.")
+   ;;(victory/ui-victory-bar )
    (fuegokit/ui-box)
    ))
 
