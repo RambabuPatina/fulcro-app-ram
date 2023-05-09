@@ -37,13 +37,13 @@ We configured the shadow-cljs server to also start a development mode HTTP serve
 So, if you didn’t make any typos then your new app should display Sample get staarted page at http://localhost:8000.
 
 ### To test with @fuegokit/react SNAPSHOT version
-- Stop the server if already running by `Cmd + C`
-- Install dependencies if not done already by `npm install`
+- Stop the server if already running by `CTRL-C`
+- Install the dependencies if not done already by `npm install`
 - Install the new snapshot version in the app by
-     `$ npm install @fuegokit/react@<SNAPSHOT>`
+        `$ npm install @fuegokit/react@<SNAPSHOT>`
 - Start the server using
-     `$ npx shadow-cljs server`
-- Open server dashboard UI at http://localhost:9630 and watch the app by selecting "Builds", click "main" and then click on "watch"
-- Open the app UI at http://localhost:8000/ and check console.
+        `$ npx shadow-cljs server`
+- Open server dashboard UI at http://localhost:9630 and watch the app by selecting "Builds", click "main" and then click on "watch".
+- Open the app UI at http://localhost:8000/ and check browser console.
 
-Note: Make sure the fugeokit components are consumed in  the file src/main/app/client.cljs at line no 8 and 18
+Note: Make sure the fugeokit components are consumed in  the file `src/main/app/client.cljs` at line no 8 and 18
