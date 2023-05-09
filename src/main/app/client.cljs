@@ -3,9 +3,9 @@
    [com.fulcrologic.fulcro.application :as app]
    [com.fulcrologic.fulcro.components :as comp :refer [defsc]]
    [com.fulcrologic.fulcro.dom :as dom]
-   [app.victory :as victory]
-   [app.lozenge :as lozenge]
-   ;;[app.fuegokit :as fuegokit]
+   ;;[app.victory :as victory]
+   ;;[app.lozenge :as lozenge]
+   [app.fuegokit :as fuegokit]
    ))
 
 (defonce app (app/fulcro-app))
@@ -14,9 +14,9 @@
   (dom/div
    (dom/h1 " Get started")
    (dom/p "In our documentation we explain exactly how you can get the most out of the app.")
-   (victory/ui-victory-bar )
-   ;;(fuegokit/ui-box)
-   (lozenge/ui-lozenge {:appearance "success"} "TEST")
+   ;;(victory/ui-victory-bar )
+   (fuegokit/ui-box)
+   ;;(lozenge/ui-lozenge {:appearance "success"} "TEST")
    ))
 
 (defn ^:export init
