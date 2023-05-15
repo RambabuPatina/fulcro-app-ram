@@ -3,9 +3,13 @@
    [com.fulcrologic.fulcro.application :as app]
    [com.fulcrologic.fulcro.components :as comp :refer [defsc]]
    [com.fulcrologic.fulcro.dom :as dom]
+   ;;["react" :as react]
+   ;;["@fuegokit/react" :as fuegokit]
    ;;[app.victory :as victory]
    ;;[app.lozenge :as lozenge]
    [app.fuegokit :as fuegokit]
+   [app.spacer :as spacer]
+   [app.centersectionheader :as centersectionheader]
    ))
 
 (defonce app (app/fulcro-app))
@@ -15,7 +19,24 @@
    (dom/h1 " Get started")
    (dom/p "In our documentation we explain exactly how you can get the most out of the app.")
    ;;(victory/ui-victory-bar )
-   (fuegokit/ui-box)
+   ;;(fuegokit/ui-box "TEST" nil))
+   (fuegokit/ui-box {:sx
+                     #js
+                      {:border "1px dashed", :borderColor "tomato", :borderRadius "3px", :p 4}}
+"my box")
+   ;;(spacer/ui-spacer {:axis "vertical", :size 44})
+   ;;(dom/h2 " After Spacer")
+   ;;(centersectionheader/ui-center-section-header
+                     ;;{:description "Most JSU Automation Suite users found these useful.",
+                     ;; :heading "Popular use cases",
+                     ;; :variant "TwoLine"})
+                      ;;(spacer/ui-spacer {:axis "vertical", :size 44}))
+                    ;;(centersectionheader/ui-center-section-header
+                    ;; {:description "Most JSU Automation Suite users found these useful.",
+                    ;;  :heading "Popular use cases",
+                    ;;  :variant "TwoLine"})
+                    ;;)
+   ;;(fuegokit/ui-atlaslozenge {:appearance "success"} "TEST")
    ;;(lozenge/ui-lozenge {:appearance "success"} "TEST")
    ))
 
