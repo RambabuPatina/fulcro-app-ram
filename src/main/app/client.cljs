@@ -8,8 +8,8 @@
    ;;[app.victory :as victory]
    ;;[app.lozenge :as lozenge]
    [app.fuegokit :as fuegokit]
-   [app.spacer :as spacer]
-   [app.centersectionheader :as centersectionheader]
+   ;;[app.spacer :as spacer]
+   ;;[app.centersectionheader :as centersectionheader]
    ))
 
 (defonce app (app/fulcro-app))
@@ -22,22 +22,12 @@
    ;;(fuegokit/ui-box "TEST" nil))
    (fuegokit/ui-box {:sx
                      #js
-                      {:border "1px dashed", :borderColor "tomato", :borderRadius "3px", :p 4}}
-"my box")
-   ;;(spacer/ui-spacer {:axis "vertical", :size 44})
-   ;;(dom/h2 " After Spacer")
-   ;;(centersectionheader/ui-center-section-header
-                     ;;{:description "Most JSU Automation Suite users found these useful.",
-                     ;; :heading "Popular use cases",
-                     ;; :variant "TwoLine"})
-                      ;;(spacer/ui-spacer {:axis "vertical", :size 44}))
-                    ;;(centersectionheader/ui-center-section-header
-                    ;; {:description "Most JSU Automation Suite users found these useful.",
-                    ;;  :heading "Popular use cases",
-                    ;;  :variant "TwoLine"})
-                    ;;)
-   ;;(fuegokit/ui-atlaslozenge {:appearance "success"} "TEST")
-   ;;(lozenge/ui-lozenge {:appearance "success"} "TEST")
+                      {:alignItems "center",
+                       :display "flex",
+                       :flexDirection "column",
+                       :justifyContent "center"}}
+                    
+                    )
    ))
 
 (defn ^:export init

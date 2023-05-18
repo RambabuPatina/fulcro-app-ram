@@ -1,12 +1,14 @@
 (ns app.fuegokit
   (:require
-   ["@fuegokit/react/lib/components/Box" :default Box]
-   ;;["@fuegokit/react/lib/components/AtlasLozenge" :default AtlasLozenge]
+   ["@fuegokit/react" :as fuegokit]
    [com.fulcrologic.fulcro.algorithms.react-interop :as react-interop]))
 
-;;(def ui-box (comp/fragment fuegokit/Box))
-;;(def ui-atlaslozenge (react-interop/react-factory AtlasLozenge))
-(def ui-box (react-interop/react-factory Box))
-;;(def ui-text (react-interop/react-factory fuegokit/Text))
-;;(def ui-button (react-interop/react-factory fuegokit/Button))
-;;(def ui-pagehero (react-interop/react-factory fuegokit/PageHero))
+(def ui-box (react-interop/react-factory fuegokit/Box))
+(def ui-global-header (react-interop/react-factory fuegokit/GlobalHeader))
+(def ui-global-header-nav (react-interop/react-factory (.-Nav fuegokit/GlobalHeader)))
+(def ui-global-header-navtitle (react-interop/react-factory (.-NavTitle fuegokit/GlobalHeader)))
+(def ui-getstarted-container (react-interop/react-factory fuegokit/GettingStartedPageGridContainer))
+(def ui-maxwidth-wrapper (react-interop/react-factory fuegokit/MaxWidthWrapper))
+(def ui-spacer (react-interop/react-factory fuegokit/Spacer))
+(def ui-getstarted-stack (react-interop/react-factory fuegokit/GettingStartedStack))
+(def ui-pagehero (react-interop/react-factory fuegokit/PageHero))

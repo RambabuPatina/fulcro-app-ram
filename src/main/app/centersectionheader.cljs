@@ -1,6 +1,6 @@
 (ns app.centersectionheader
   (:require
-   ["@fuegokit/react/lib/components/GettingStartedPage/CenteredSectionHeader" :default CenteredSectionHeader]
+   ["@fuegokit/react" :as fuegokit]
    [com.fulcrologic.fulcro.algorithms.react-interop :as react-interop]))
 
-(def ui-center-section-header (react-interop/react-factory CenteredSectionHeader))
+(def ui-center-section-header (react-interop/react-factory fuegokit/CenteredSectionHeader))
